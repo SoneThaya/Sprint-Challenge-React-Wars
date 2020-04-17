@@ -34,7 +34,7 @@ const App = () => {
         console.log('Error', err)
       })
       setLoading(false)
-  }, [character])
+  }, [page])
   
 
   return (

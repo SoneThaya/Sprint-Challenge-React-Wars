@@ -28,7 +28,7 @@ const Character = ({ data, loading }) => {
               <Grid.Column key={character.id}>
                 <CardCharacter>
                   <Card.Content>
-                    <Card.Header><img src={character.image} /></Card.Header>
+                    <Card.Header><img src={character.image} alt={character.name} /></Card.Header>
                     <Card.Description>
                       <p>Name: {character.name}</p>
                       <p>Species: {character.species}</p>
