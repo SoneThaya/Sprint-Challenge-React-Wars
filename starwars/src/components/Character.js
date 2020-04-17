@@ -14,7 +14,10 @@ const CardCharacter = styled.div`
     padding: 90px;
 `
 
-const Character = ({data}) => {
+const Character = ({ data, loading }) => {
+  if (loading) {
+    return <h2>Loading...</h2>
+  }
   return (
     <>
      
@@ -25,7 +28,6 @@ const Character = ({data}) => {
               <Grid.Column key={character.id}>
                 <CardCharacter>
                   <Card.Content>
-                   
                     <Card.Header><img src={character.image} /></Card.Header>
                     <Card.Description>
                       <p>Name: {character.name}</p>
